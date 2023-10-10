@@ -42,3 +42,8 @@ const countries = [
         securityCouncil: true,
     },
 ]
+
+countries.forEach((country) => console.log(country.officialName));
+countries.forEach((country) => console.log(country.religion));
+const unitaryStates = countries.filter((country) => country.federation === false);
+    console.log(unitaryStates);
