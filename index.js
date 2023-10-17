@@ -43,7 +43,11 @@ const countries = [
     },
 ]
 
-countries.forEach((country) => console.log(country.officialName));
-countries.forEach((country) => console.log(country.religion));
+countries.forEach((country) => {
+    console.log(country.officialName);
+    country.religion.forEach((religion) => {
+        console.log(religion);
+    });
+});
 const unitaryStates = countries.filter((country) => country.federation === false);
     console.log(unitaryStates);
